@@ -57,8 +57,17 @@ async function ignoreStudent(name) {
   }
 }
 
+
+async function getTotal() {
+  try {
+    let data = await axios.get("//localhost:5000/total");
+    return data.length;
+  } catch (error) {
+    console.error(error);
+  }
+}
 export default function Album() {
-  let [countArr, setCountArr] = useState(1);
+  let [countArr, setCountArr] = useState(0);
   let [name, setName] = useState("Start Exam");
   let [isIgnore, setIsIgnore] = useState(false);
   function onClickNext() {

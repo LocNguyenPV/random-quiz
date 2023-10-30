@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import { readFile, appendFile } from './module/utils.js';
 
 const app = express();
-const className = 'N7';
+const className = 'N6';
 const pathData = `./data/student-${className}.json`;
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,10 +25,12 @@ app.post('/generate', function(req, res) {
     console.log('body is ',req.body);
     let studentName = req.body.name;
     let num = req.body.count;
-    randomQuest(`${num}_${studentName}`, className);
+    // randomQuest(`${num}_${studentName}`, className);
+    randomQuest(`${studentName}`, className, pathData);
     appendFile(pathData, studentName);
     res.send(req.body);
 });
+
 
 app.post('/ignore', function(req, res) {
     console.log('receiving data ...');

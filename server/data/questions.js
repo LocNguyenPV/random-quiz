@@ -50,11 +50,11 @@ let q6_a = [2, 3, 4, 5];
 
 // Sử dụng Destructoring để lấy giá trị mảng của biến sau
 let q7_a = {
-  parent: {
-    children: {
-      value: [1, 2, 3, 4],
+    parent: {
+        children: {
+            value: [1, 2, 3, 4],
+        },
     },
-  },
 };
 
 
@@ -74,7 +74,7 @@ let q9_b = [4, 5, 6];
 /// Question ///
 
 // Sử dụng Spread để thêm thuộc tính {phone: '0123'} vào object 
-let q10_a = {name: 'Luke', className: 'N123'}
+let q10_a = { name: 'Luke', className: 'N123' }
 
 /// Question ///
 
@@ -84,7 +84,7 @@ let q10_a = {name: 'Luke', className: 'N123'}
 /// Question ///
 
 // Sử dụng arrow function viết lại function sau
-function sum(a, b){
+function sum(a, b) {
     return a + b;
 }
 
@@ -100,6 +100,8 @@ let q13_func = () => return 1;
 // Sửa lại arrow function sao cho không cần dùng return vẫn trả về giá trị a
 let q14_func = (a) => { return a };
 
+/// Question ///
+//Sử dụng arrow function để viết hàm chuyển từ phút sang giây
 
 
 /// Question ///
@@ -108,8 +110,8 @@ let q14_func = (a) => { return a };
 this.name = "Luke"
 let q16_a = {
     name: "adam",
-    funcA: () => {console.log(this.name)},
-    funcB: function(){
+    funcA: () => { console.log(this.name) },
+    funcB: function () {
         console.log(this.name);
     }
 }
@@ -117,10 +119,11 @@ let q16_a = {
 
 /// Question ///
 
-// Sửa lại đoạn code sao cho in ra kết quả đúng
-for (var val = 0; val < 10; val++) {
+// Hiện giờ đoạn code đang in ra 10 lần câu 'The number is 4', sửa lại đoạn code sao cho đúng mà không xóa setTimeout
+// Kết quả mong muốn: The number is 0, The number is 1, The number is 3, The number is 4 
+for (var val = 0; val < 4; val++) {
     setTimeout(() => {
-        console.log(`The number is ${val}`);
+        console.log('The number is ' + val);
     }, 1000);
 }
 
@@ -130,8 +133,8 @@ for (var val = 0; val < 10; val++) {
 // Kết quả của funcA và funcB là gì
 let q15_a = {
     name: "adam",
-    funcA: () => {console.log(this.name)},
-    funcB: function(){
+    funcA: () => { console.log(this.name) },
+    funcB: function () {
         console.log(this.name);
     }
 }
@@ -140,7 +143,7 @@ let q15_a = {
 /// Question ///
 
 // Sử dụng Default Parameter sao cho giá trị biến a là 10
-function sum(a, b){
+function sum(a, b) {
     return a * b;
 }
 let q18_a = sum(5);
@@ -150,9 +153,9 @@ console.log(q18_a);
 
 /// Question ///
 
-// Sử dụng Default Parameter sao cho giá trị biến a là 8
+// Sử dụng Default Parameter sao cho giá trị biến q19_a là 8
 
-let sumFunc = (a, b) => {return a * b};
+let sumFunc = (a, b) => { return a * b };
 let q19_a = sumFunc(4);
 console.log(q19_a);
 
@@ -173,7 +176,7 @@ console.log(q19_a);
 
 // Sửa lại function sau thành generator function
 
-function generatorFunc(a, b){
+function generatorFunc(a, b) {
     return a * b;
 }
 
@@ -206,3 +209,119 @@ function generatorFunc(a, b){
 /// Question ///
 
 // Viết một chuỗi các promise, từng promise sẽ nhận vô các chữ làm tham số và ghép lại thành một câu hoàn chỉnh
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+const q20_func = (num) => num > 20 ? 1 : 0;
+q20_func(15);
+// Trả lời: 
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+function q21_func() {
+    console.log(message);
+    var message = "This is a test";
+}
+q21_func(15);
+// Trả lời: 
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+function q22_func(...params) {
+    console.log(typeof params);
+}
+q22_func(15);
+// Trả lời: 
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+function q23_func(...params) {
+    return (() => "This is a string");
+}
+console.log(typeof q23_func);
+// Trả lời: 
+
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+let q24_a = "12345"
+console.log([...q24_a]);
+// Trả lời: 
+
+/// Question ///
+// Khai báo một hàm bất kỳ có sử dụng rest parameter, in ra những parameter đó
+
+
+/// Question ///
+// Khai báo một hàm có tên là q27_sum, sử dụng rest parameter, tính tổng của parameter truyền vô
+q27_sum(1, 2, 3, 4);
+
+/// Question ///
+// Kết quả trả ra sẽ là gì?
+const { a, b, ...c } = { a: 1, b: "Test", c: () => "This is a function", d: [1, 4, 5, 2] }
+console.log(a);
+console.log(c);
+// Trả lời: 
+
+/// Question ///
+// Cách gọi nào sau đây là đúng nhất
+let q25_a = new Promise((resovle, reject) => {
+    resovle("Done");
+});
+
+q25_a()
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
+
+q25_a()
+    .then(result => console.log(result))
+    .catch(error => console.error(error))
+    .finally(data => console.log("Finish"));
+
+q25_a().catch(error => console.error(error));
+
+q25_a()
+    .then(result => console.log(result))
+    .finally(data => console.log("Finish"));
+
+
+/// Question ///
+// Cách gọi nào sau đây là đúng nhất
+let q26_a = Promise.reject("Error");
+
+q26_a()
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
+
+q26_a()
+    .then(result => console.log(result))
+    .catch(error => console.error(error))
+    .finally(data => console.log("Finish"));
+
+q26_a().catch(error => console.error(error));
+
+q26_a()
+    .then(result => console.log(result))
+    .finally(data => console.log("Finish"));
+
+
+
+/// Question ///
+// thứ tự in ra của câu lệnh sau là gì?
+let q28_promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(1), 2000);
+});
+
+let q28_promise2 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(2), 1000);
+});
+
+q28_promise1().then(result => console.log(result));
+
+q28_promise2().then(result => console.log(result));
+
+//Trả lời: 
+
+/// Question ///
+//Cho một mảng các giá trị, sử dụng forEach để in ra từng giá trị
+let q29_arr = [1, 2, "Test", 8, 2];
