@@ -92,7 +92,7 @@ export default function Album() {
         <Toolbar>
           <QuizIcon sx={{ mr: 2 }} />
           <Typography variant="h6" color="inherit" noWrap>
-            Midterm Exams
+            Midterm Examsas
           </Typography>
         </Toolbar>
       </AppBar>
