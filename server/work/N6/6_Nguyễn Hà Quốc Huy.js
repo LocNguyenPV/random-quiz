@@ -1,7 +1,7 @@
 //// 1 
 
 // Viết một promise trả về lỗi bất kỳ sau 1s và xử lý bằng .catch()
-
+sss
 
 
 //// 2 
