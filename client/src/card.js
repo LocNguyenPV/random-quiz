@@ -68,7 +68,7 @@ async function getTotal() {
 }
 export default function Album() {
   let [countArr, setCountArr] = useState(0);
-  let [name, setName] = useState("Start Exam");
+  let [name, setName] = useState("Midterm Test");
   let [isIgnore, setIsIgnore] = useState(false);
   function onClickNext() {
     if (isIgnore) {
@@ -122,7 +122,7 @@ export default function Album() {
                 spacing={2}
                 justifyContent="center"
               >
-                {name !== "Midterm Exam" && <Button variant="contained" onClick={onClickGenerate}>Generate Question</Button>}
+                {name !== "Start Exam" && <Button variant="contained" onClick={onClickGenerate}>Generate Question</Button>}
                 <Button variant="outlined" onClick={onClickNext}>
                 <NavigateNextIcon />
                   {/* {name === "Start Exam" ? <NavigateNextIcon /> : <HighlightOffIcon sx={{ color: 'red' }} />} */}
