@@ -19,7 +19,6 @@ const q2_c2 = "Test";
 /// Question ///
 
 // Đoạn code nào sau đây là sai
-const q3_c1 = [1, 2, 3];
 q3_c1[1] = 4;
 
 const q3_c2 = "Test";
@@ -30,8 +29,6 @@ q3_c2 = 1;
 
 // Sử dụng Template String để in ra chuỗi theo định dạng sau 'Hi, Luke'
 let q4_a = "Luke";
-console.log(); //Write here
-
 
 /// Question ///
 
@@ -43,8 +40,6 @@ console.log(); //Write here
 /// Question ///
 
 // Sử dụng Destructoring để tách giá trị của biến sau
-let q6_a = [2, 3, 4, 5];
-
 
 /// Question ///
 
@@ -58,24 +53,21 @@ let q7_a = {
 };
 
 
+
 /// Question ///
 
 // Sử dụng Destructoring để lấy duy nhất giá trị thứ 3 của mảng 
 let q8_a = [0, 1, 2, 3, 4, 5, 6];
-
-
 /// Question ///
 
 // Sử dụng Spread để gắn 2 mảng lại 
 let q9_a = [0, 1, 2, 3]
 let q9_b = [4, 5, 6];
 
-
 /// Question ///
 
 // Sử dụng Spread để thêm thuộc tính {phone: '0123'} vào object 
 let q10_a = { name: 'Luke', className: 'N123' }
-
 /// Question ///
 
 // Khai báo một function bất kỳ có sử dụng Rest Parameter
@@ -88,17 +80,16 @@ function sum(a, b) {
     return a + b;
 }
 
+
 /// Question ///
 
 // Sửa lại arrow function sau sao cho đúng
-let q13_func = () => return 1;
 
 
 
 /// Question ///
 
 // Sửa lại arrow function sao cho không cần dùng return vẫn trả về giá trị a
-let q14_func = (a) => { return a };
 
 /// Question ///
 //Sử dụng arrow function để viết hàm chuyển từ phút sang giây
@@ -121,13 +112,6 @@ let q16_a = {
 
 // Hiện giờ đoạn code đang in ra 10 lần câu 'The number is 4', sửa lại đoạn code sao cho đúng mà không xóa setTimeout
 // Kết quả mong muốn: The number is 0, The number is 1, The number is 3, The number is 4 
-for (var val = 0; val < 4; val++) {
-    setTimeout(() => {
-        console.log('The number is ' + val);
-    }, 1000);
-}
-
-
 /// Question ///
 
 // Kết quả của funcA và funcB là gì
@@ -142,10 +126,7 @@ let q15_a = {
 
 /// Question ///
 
-// Sử dụng Default Parameter sao cho giá trị biến a là 10
-function sum(a, b) {
-    return a * b;
-}
+
 let q18_a = sum(5);
 console.log(q18_a);
 
@@ -155,7 +136,6 @@ console.log(q18_a);
 
 // Sử dụng Default Parameter sao cho giá trị biến q19_a là 8
 
-let sumFunc = (a, b) => { return a * b };
 let q19_a = sumFunc(4);
 console.log(q19_a);
 
@@ -168,7 +148,6 @@ console.log(q19_a);
 //{value, isDone}
 //{result, finish}
 //{value, finish}
-//{value, done}
 
 
 
@@ -213,6 +192,7 @@ function generatorFunc(a, b) {
 /// Question ///
 // Kết quả trả ra sẽ là gì?
 const q20_func = (num) => num > 20 ? 1 : 0;
+
 q20_func(15);
 // Trả lời: 
 
@@ -222,7 +202,6 @@ function q21_func() {
     console.log(message);
     var message = "This is a test";
 }
-q21_func(15);
 // Trả lời: 
 
 /// Question ///
@@ -231,7 +210,6 @@ function q22_func(...params) {
     console.log(typeof params);
 }
 q22_func(15);
-// Trả lời: 
 
 /// Question ///
 // Kết quả trả ra sẽ là gì?
@@ -239,28 +217,22 @@ function q23_func(...params) {
     return (() => "This is a string");
 }
 console.log(typeof q23_func);
-// Trả lời: 
 
 
 /// Question ///
 // Kết quả trả ra sẽ là gì?
 let q24_a = "12345"
 console.log([...q24_a]);
-// Trả lời: 
 
 /// Question ///
 // Khai báo một hàm bất kỳ có sử dụng rest parameter, in ra những parameter đó
-
 
 /// Question ///
 // Khai báo một hàm có tên là q27_sum, sử dụng rest parameter, tính tổng của parameter truyền vô
 q27_sum(1, 2, 3, 4);
 
 /// Question ///
-// Kết quả trả ra sẽ là gì?
-const { a, b, ...c } = { a: 1, b: "Test", c: () => "This is a function", d: [1, 4, 5, 2] }
-console.log(a);
-console.log(c);
+// Kết quả trả ra sẽ là gì
 // Trả lời: 
 
 /// Question ///
