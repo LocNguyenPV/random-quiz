@@ -122,7 +122,7 @@ export default function Album() {
                 spacing={2}
                 justifyContent="center"
               >
-                {name !== "Start Exam" && <Button variant="contained" onClick={onClickGenerate}>Generate Question</Button>}
+                {name !== "Midterm Exam" && <Button variant="contained" onClick={onClickGenerate}>Generate Question</Button>}
                 <Button variant="outlined" onClick={onClickNext}>
                 <NavigateNextIcon />
                   {/* {name === "Start Exam" ? <NavigateNextIcon /> : <HighlightOffIcon sx={{ color: 'red' }} />} */}
