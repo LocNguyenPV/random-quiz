@@ -12,7 +12,7 @@ function readData() {
 export default function generateQuestions(name, className, path) {
     const no = JSON.parse(readFile(path)).done.length;
     let result = shuffle(readData());
-    let sliceResult = result.slice(0, 5);
+    let sliceResult = result.slice(0, 1);
     writeArrayToFile(`.\\work\\retake\\${className}\\${no + 1}_${name}.js`, sliceResult);
     // var file = fs.createWriteStream(`.\\work\\${name}.js`);
     // file.on('error', function (err) { console.error(err) });

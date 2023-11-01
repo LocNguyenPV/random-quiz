@@ -20,8 +20,7 @@ export function writeArrayToFile(path, arr) {
     if (fs.existsSync(path)) return;
     var file = fs.createWriteStream(path);
     file.on('error', function (err) { console.error(err) });
-    let count = 1;
-    arr.forEach(value => file.write(`//// ${count++} ${value}\n`));
+    arr.forEach(value => file.write(`//// ${value}\n`));
     file.end();
 }
 

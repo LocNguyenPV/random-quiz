@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import { readFile, appendFile } from './module/utils.js';
 
 const app = express();
-const className = 'N6';
+const className = 'N7';
 const pathData = `./data/student-${className}.json`;
 
 app.use(bodyParser.urlencoded({ extended: false }));

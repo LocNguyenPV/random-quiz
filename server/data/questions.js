@@ -1,6 +1,6 @@
 /// Question ///
 
-// Sử dụng Destructoring để lấy giá trị mảng của biến q7_a
+// Sử dụng Destructuring để lấy giá trị mảng của biến q7_a
 // sau đó sử dụng Spread Operator để gắn mảng q7_b vào mảng vừa mới lấy
 // và sử dụng forEach để in ra từng phần tử
 
@@ -18,7 +18,7 @@ let q7_b = [5, 6, 7, 8];
 
 // Sử dụng Spread để gắn 2 mảng lại
 // Sử dụng forEach để in ra từng phần tử của mảng mới gắn
-// sau đó sử dụng Destructoring để lấy duy nhất 2 phần tử ở vị trí thứ 1 và thứ 3 của mảng mới
+// sau đó sử dụng Destructuring để lấy duy nhất 2 phần tử ở vị trí thứ 1 và thứ 3 của mảng mới
 let q9_a = [0, 1, 2, 3]
 let q9_b = [4, 5, 6];
 
@@ -26,7 +26,7 @@ let q9_b = [4, 5, 6];
 /// Question ///
 
 // Sử dụng Spread để thêm thuộc tính {phone: '0123'} vào object
-// sau đó sử dụng Destructoring để lấy thuộc tính className ra
+// sau đó sử dụng Destructuring để lấy thuộc tính className ra
 let q10_a = { name: 'Luke', className: 'N123' }
 
 
@@ -89,8 +89,8 @@ let arr_2 = [20, 18, 27, 36, 12, 3, 4, 87];
 let arr_3 = [20, 21, 23, 24, 27, 28, 2, 4, 8, 10, 15] 
 
 /// Question ///
-// Cho hàm nhận vô một ham số là student, student sẽ có format {name: string, point: number}
-// Sử dụng destructoring để lấy duy nhất tên của student
+// Cho hàm nhận vô một ham số là obj student, obj student sẽ có format {name: string, point: number}
+// Sử dụng Destructuring để lấy duy nhất tên của student
 // Sử dụng template string để trả về chuỗi có dạng "Hi, my name is //studentName"
 function displayStudent(student){
    
@@ -98,7 +98,7 @@ function displayStudent(student){
 
 /// Question ///
 // Cho một mảng các obj
-// sử dụng vòng lặp for kết hợp với Destructoring để in ra chi tiết của từng obj
+// sử dụng vòng lặp for kết hợp với Destructuring để in ra chi tiết của từng obj
 let arrObj_1 = [
     {name:"Ele1", age: 1},
     {name:"Ele2", age: 2},
